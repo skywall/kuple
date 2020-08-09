@@ -1,43 +1,3 @@
-# Kuple
-[![](https://jitpack.io/v/skywall/kuple.svg)](https://jitpack.io/#skywall/kuple)
-
-Simple tuples implementation in Kotlin. Kuples can be combined, wrapped types are preserved after this operation. 
-Kuples were generated with [KotlinPoet](https://square.github.io/kotlinpoet/) (module `generator`).
-
-## How to use
-
-```kotlin
-val userKuple = Kuple("skywall", 30)
-val repoKuple = Kuple("https://github.com/skywall/kuple")
-
-// Kuples combination
-val combinedKuple = userKuple + repoKuple
-
-// Kuple destruction 
-val (name, age, link) = combinedKuple
-```
-
-## Download
-
-Project level `build.gradle`:
-```groovy
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
-```
-
-Module level `app/build.gradle`:
-```groovy
-dependencies {
-    implementation 'com.github.skywall:kuple:1.0.0'
-}
-```
-
-## Licence
-
-```
 MIT License
 
 Copyright (c) 2020 Lukáš Sztefek
@@ -59,4 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
