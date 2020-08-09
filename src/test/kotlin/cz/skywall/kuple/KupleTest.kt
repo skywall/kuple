@@ -29,12 +29,6 @@ class KupleTest {
     }
 
     @Test
-    fun `iteration over tuple prints all of the items`() {
-        val k = Kuple("a", 1, Throwable())
-        Pair("A", 1)
-    }
-
-    @Test
     fun `sum of two tuples returns concatenated tuple`() {
         val t1 = Kuple("a", 2)
         val t2 = Kuple(1, "A")
