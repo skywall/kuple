@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4-M1"
+    kotlin("jvm") version "1.4.0-rc"
 }
 
 group = "cz.skywall.kuple"
@@ -7,11 +7,13 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     maven("https://dl.bintray.com/kotlin/kotlin-eap")
+    maven("https://org.jetbrains.kotlin")
     mavenCentral()
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
 }
 
 tasks {
@@ -20,5 +22,8 @@ tasks {
     }
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
+    }
+    test {
+        useJUnitPlatform()
     }
 }
