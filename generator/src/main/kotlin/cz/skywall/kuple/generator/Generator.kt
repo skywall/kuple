@@ -106,7 +106,7 @@ private fun kupleNTypeSpec(n: Int): TypeSpec {
         .build()
 
     return TypeSpec.classBuilder("Kuple$n")
-        .addTypeVariables(PARAMETERS_LETTERS.map { TypeVariableName(it, KModifier.OUT) })
+        .addTypeVariables(PARAMETERS_LETTERS.map { TypeVariableName(it, KModifier.OUT) }.take(n))
         .primaryConstructor(
             FunSpec.constructorBuilder()
                 .addParameters(constructorParametersSpec)
