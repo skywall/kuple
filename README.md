@@ -1,5 +1,6 @@
 # Kuple
 [![](https://jitpack.io/v/skywall/kuple.svg)](https://jitpack.io/#skywall/kuple)
+![Check Master](https://github.com/skywall/kuple/workflows/Check%20Master/badge.svg?branch=master)
 
 Simple tuples implementation in Kotlin. Kuples can be combined, wrapped types are preserved after this operation. 
 Kuples were generated with [KotlinPoet](https://square.github.io/kotlinpoet/) (module `generator`).
